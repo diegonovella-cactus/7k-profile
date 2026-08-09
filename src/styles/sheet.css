@@ -1,0 +1,179 @@
+/* ---------------------------------------------------------------
+   Peças compartilhadas pelos bottom sheets.
+   Global (prefixo sh-) porque os cinco conteúdos reusam as mesmas
+   formas: seção, card, linha, chip e botões de rodapé.
+---------------------------------------------------------------- */
+
+.sh-sec {
+  margin-top: 24px;
+}
+.sh-sec:first-child {
+  margin-top: 8px;
+}
+
+.sh-h {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 13px;
+}
+
+.sh-h h3 {
+  margin: 0;
+  font-size: 15px; /* título de área */
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.sh-count {
+  min-width: 26px;
+  height: 22px;
+  padding: 0 8px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-pill);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-2);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.sh-lead {
+  margin: -4px 0 13px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-3);
+}
+
+/* card genérico */
+.sh-card {
+  padding: 14px;
+  border-radius: var(--r-lg);
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* lista de linhas */
+.sh-list {
+  display: grid;
+  gap: 8px;
+}
+
+.sh-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--r-md);
+  text-align: left;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: border-color 0.15s ease, transform 0.14s ease;
+}
+button.sh-row:active {
+  transform: scale(0.985);
+}
+button.sh-row:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sh-ico {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: var(--c, var(--gold));
+  background: color-mix(in srgb, var(--c, var(--gold)) 15%, transparent);
+}
+
+.sh-txt {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.sh-txt b {
+  font-size: 12px; /* conteúdo */
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.sh-txt span {
+  font-size: 12px;
+  color: var(--text-4);
+}
+
+.sh-meta {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--c, var(--gold));
+  white-space: nowrap;
+}
+
+/* chips em pílula, como os filtros da referência */
+.sh-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.sh-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: var(--r-pill);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: transparent;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.14s ease;
+}
+.sh-chip:active {
+  transform: scale(0.96);
+}
+.sh-chip:hover {
+  border-color: rgba(255, 255, 255, 0.32);
+}
+.sh-chip.on {
+  border-color: rgba(232, 181, 99, 0.6);
+  background: rgba(232, 181, 99, 0.12);
+}
+
+/* botões do rodapé */
+.sh-btn {
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-md);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  transition: transform 0.14s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.sh-btn:active {
+  transform: scale(0.98);
+}
+
+.sh-btn--ghost {
+  color: var(--text-2);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.sh-btn--ghost:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.sh-btn--primary {
+  color: #17130a;
+  background: var(--grad-gold);
+  box-shadow: var(--sh-gold);
+}
+
+.sh-btn--wide {
+  grid-column: 1 / -1;
+}

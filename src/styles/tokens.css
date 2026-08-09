@@ -1,0 +1,61 @@
+/* ---------------------------------------------------------------
+   7K Profile — design tokens
+   Paleta: dark navy + dourado (referência: public/refs/estilo-visual.png)
+   Trocar aqui recolore o app inteiro.
+---------------------------------------------------------------- */
+:root {
+  /* superfícies */
+  --bg-deep: #0f1329;
+  --bg: #141935;
+  --surface: #1c2242;
+  --surface-2: #232a4f;
+  --surface-3: #2b3360;
+  --border: #2a3157;
+  --border-soft: rgba(255, 255, 255, 0.06);
+
+  /* texto */
+  --text: #ffffff;
+  --text-2: #b8bed9;
+  --text-3: #8c93b8;
+  --text-4: #6b7199;
+
+  /* acentos */
+  --gold: #e8b563;
+  --gold-2: #c98f3c;
+  --gold-deep: #8a5e22;
+  --lime: #b4f03c;
+  --diamond: #6fd8f5;
+  --danger: #ff5c74;
+  --up: #4ade80;
+
+  /* gradientes */
+  --grad-gold: linear-gradient(135deg, #f5d089 0%, #e8b563 42%, #b8802f 100%);
+  --grad-ring: conic-gradient(from -90deg, #f5d089, #e8b563 40%, #b4f03c 75%, #f5d089);
+  --grad-card: linear-gradient(160deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+
+  /* forma */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-xl: 22px;
+  --r-pill: 999px;
+
+  /* elevação */
+  --sh-card: 0 2px 10px rgba(0, 0, 0, 0.28);
+  --sh-pop: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --sh-gold: 0 6px 22px rgba(232, 181, 99, 0.22);
+
+  /* espaço */
+  --gutter: 16px;
+
+  /* frame padrão */
+  --frame-w: 430px;
+  --frame-h: 932px;
+
+  /* barra de título */
+  --topbar-h: 57px;
+  --topbar-fill-h: 58px;
+  --topbar-solid: #16182a;
+  --topbar-bg: rgba(22, 24, 42, 0.58);
+  --topbar-line: #2b2c3d;
+}
