@@ -5,9 +5,11 @@ import { shortcuts } from '../data/player'
 import bg1 from '../assets/tile-bg-1.png'
 import bg2 from '../assets/tile-bg-2.png'
 import bg3 from '../assets/tile-bg-3.png'
+import bg4 from '../assets/tile-bg-4.png'
+import bg5 from '../assets/tile-bg-5.png'
 
-/** os três padrões se alternam pelos cards, nunca repetindo lado a lado */
-const fundos = [bg1, bg2, bg3]
+/** os cinco padrões se alternam pelos cards; com 6 atalhos, só o último repete */
+const fundos = [bg1, bg2, bg3, bg4, bg5]
 </script>
 
 <template>
