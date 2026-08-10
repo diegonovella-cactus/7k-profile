@@ -57,7 +57,7 @@ import { menu } from '../data/player'
   transform: scale(0.985);
 }
 .row:hover {
-  border-color: rgba(232, 181, 99, 0.35);
+  border-color: rgba(161, 205, 61, 0.35);
 }
 
 .ico {
@@ -66,8 +66,8 @@ import { menu } from '../data/player'
   display: grid;
   place-items: center;
   border-radius: 11px;
-  color: var(--gold);
-  background: rgba(232, 181, 99, 0.11);
+  color: #a9dc4a;
+  background: rgba(161, 205, 61, 0.15);
 }
 
 .txt {

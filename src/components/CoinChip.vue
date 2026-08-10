@@ -79,6 +79,6 @@ small {
   letter-spacing: 0.1px;
   white-space: nowrap;
   text-transform: uppercase;
-  color: var(--text-3);
+  color: var(--text);
 }
 </style>

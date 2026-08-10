@@ -169,9 +169,9 @@ button.sh-row:hover {
 }
 
 .sh-btn--primary {
-  color: #17130a;
-  background: var(--grad-gold);
-  box-shadow: var(--sh-gold);
+  color: #141a12;
+  background: var(--grad-lime);
+  box-shadow: 0 6px 22px rgba(169, 214, 60, 0.24);
 }
 
 .sh-btn--wide {

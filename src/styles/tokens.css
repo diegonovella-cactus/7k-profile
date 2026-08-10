@@ -30,6 +30,7 @@
 
   /* gradientes */
   --grad-gold: linear-gradient(135deg, #f5d089 0%, #e8b563 42%, #b8802f 100%);
+  --grad-lime: linear-gradient(100deg, #8cc63f 0%, #a9d63c 46%, #d4f03c 100%);
   --grad-ring: conic-gradient(from -90deg, #f5d089, #e8b563 40%, #b4f03c 75%, #f5d089);
   --grad-card: linear-gradient(160deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
 

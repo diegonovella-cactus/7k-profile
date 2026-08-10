@@ -68,6 +68,11 @@ const links = [
 </template>
 
 <style scoped>
+/* mesmos tons verdes de Minha Conta — .sh-ico deriva ícone e fundo de --c */
+.sh-row {
+  --c: #a9dc4a;
+}
+
 .sw {
   width: 44px;
   height: 26px;
